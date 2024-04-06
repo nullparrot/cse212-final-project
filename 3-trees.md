@@ -1,4 +1,4 @@
-[- Return -](0-welcome.md)
+[Return](0-welcome.md)
 
 # Trees
 
