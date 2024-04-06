@@ -18,7 +18,7 @@ def __init__(self):
 
 We'll refer to each value in a linked list as a 'node'. For the most basic implementation of a linked list, each node stores only its value or "data" and the location of the next node. Much more common though, is for each node to also store the location of the previous node. This allows the data to be accessed at any point in the chain, and then moved through either forwards or in reverse.
 
-![Linked List Example](linked-list-example.png)
+![Linked List Example Diagram](linked-list-example.png)
 
 ```python
 class Node:
