@@ -6,6 +6,53 @@ Trees are an ordered and sorted data structure. They're similar to a linked list
 
 ![Tree Example Diagram](tree-example.png)
 
+## Initializing the Class
+
+When accessing data from a tree, everything starts from the root.
+
+```python
+class BST:
+    def __init__(self):
+        self.root = None
+```
+
+From there, the root value is stored in the first node. Each node stores three pieces of data: it's value, a pointer to a 'right' node, and a pointer to a 'left' node.
+
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+```
+
+## Adding Data
+
+If the tree is empty, this first value is added as the root. 
+
+```python
+def insert(self, data):
+    if self.root is None:
+        self.root = BST.Node(data)
+    else:
+        self._insert(data, self.root)
+```
+
+When adding data beyond the root we _could_ randomly decide to add data to the left or right, but that would create a tree with very difficult data to search. It's better to add data by following a set pattern. If we always add data to the right if it's value is greater than the current node, or left if it's less, we create a data structure that can easily be searched.
+
+```python
+def _insert(self, data, node):
+    if data < node.data:
+        if node.left is None:
+            node.left = BST.Node(data)
+        else:
+            self._insert(data, node.left)
+    elif data > node.data:
+        if node.right is None:
+            node.right = BST.Node(data)
+        else:
+            self._insert(data, node.right)
+```
 
 # Sample Tree Class
 
