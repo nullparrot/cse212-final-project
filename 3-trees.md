@@ -1,3 +1,5 @@
+[- Return -](0-welcome.md)
+
 # Trees
 
 Trees are an ordered and sorted data structure. They're similar to a linked list in principle, but rather than a single chain of linked data, it branches. Starting at the first node, or the root, there are two linked nodes. This branching allows the data to be aranged in a way that searches can be performed very efficently. 

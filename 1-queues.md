@@ -1,3 +1,5 @@
+[- Return -](0-welcome.md)
+
 # Queues
 
 Queues are an ordered set of data that function on the principle of First-In-First-Out, while Python Lists function on the principle of First-In-Last-Out. A list is more like a stack of papers, where it's easiest to take a piece off the top, while a queue operates more like the line at the pharmamcy. People are helped in the order they got in line. The first people getting served first.

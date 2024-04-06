@@ -1,3 +1,5 @@
+[- Return -](0-welcome.md)
+
 # Linked Lists
 
 Linked list are another form of an ordered data structure, but they store the individual values seperate from each other. They maintain a relationship between the values by storing the value, and the location of the next value. Think of it like a scavenger hunt. Where each clue leads you to where the next clue is hidden.
