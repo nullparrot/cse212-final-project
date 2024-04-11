@@ -260,3 +260,5 @@ class LinkedList:
 ## Problem
 
 Implement a function named "insert_at_index" that inserts new nodes at a specific index in the linked list. Assume the head is index 0. If the list is empty, place the item at the head. If the index is past the end of the list, place it at the tail.
+
+[Solution](linked-lists-solution.md)

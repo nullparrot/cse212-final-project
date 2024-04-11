@@ -1,3 +1,5 @@
+[Return to Lesson](3-trees.md)
+
 ## Problem Example
 
 Finding the path is effectivly the same as finding a value in the tree. The main difference is that we need to build a string that stores the path as we travel down the tree. We'll store the path in the 'pathway' variable.
