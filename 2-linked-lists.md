@@ -1,4 +1,4 @@
-[Return](0-welcome.md)
+[Return to Main Page](0-welcome.md)
 
 # Linked Lists
 
@@ -34,6 +34,8 @@ When adding data to a linked list, it can be added at the head, tail, or some po
 
 ### Inserting a Head
 
+- **Complexity: O(1)**
+
 ```python
 def insertHead(self, value):
     new_node = LinkedList.Node(value)
@@ -47,6 +49,8 @@ def insertHead(self, value):
 ```
 
 ### Inserting a Tail
+
+- **Complexity: O(1)**
 
 ```python
 def insert_tail(self, value):
@@ -64,7 +68,7 @@ def insert_tail(self, value):
 
 To insert data in a linked list, you need to specify where it should go. For this function it places the new node after a specific value stored in the linked list.
 
--   Complexity: 
+- **Complexity: O(n)**
 
 ```python
 def insert_after(self, value, new_value):
@@ -89,6 +93,8 @@ Similar to adding data, when removing data we can choose to remove it from the h
 
 ### Removing the Head
 
+- **Complexity: O(1)**
+
 ```python
 def remove_head(self):
     if self.head == self.tail:
@@ -101,6 +107,8 @@ def remove_head(self):
 
 ### Removing the Tail
 
+- **Complexity: O(1)**
+
 ```python
 def remove_tail(self):
     if self.head == self.tail:
@@ -112,6 +120,8 @@ def remove_tail(self):
 ```
 
 ### Removing a Specific Value
+
+- **Complexity: O(n)**
 
 ```python
 def remove(self, value):

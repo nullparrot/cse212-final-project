@@ -1,4 +1,4 @@
-[Return](0-welcome.md)
+[Return to Main Page](0-welcome.md)
 
 # Trees
 
@@ -52,6 +52,24 @@ def _insert(self, data, node):
             node.right = BST.Node(data)
         else:
             self._insert(data, node.right)
+```
+
+## Searching the Tree
+
+Since data's added to the tree in an orderly manner, we can search it by following the pattern. We'll use a recursive function to follow the branches and decided at each node which direction to go. If the values less than the current node, we'll go left. We'll go right if it's greater. If there's no node in that direction, we'll go the other way. By folowing this pattern we'll find organized data the quickest, but still locate the value if its in the wrong spot.
+
+```python
+def __contains__(self, data):
+    return self._contains(data, self.root)
+
+def _contains(self, data, node):
+    if node.data is not None:
+        if node.data == data:
+            return True
+        elif data < node.data and node.left is not None:
+            return self._contains(data, node.left)
+        elif data > node.data and node.right is not None:
+            return self._contains(data, node.right)
 ```
 
 # Sample Tree Class
@@ -134,3 +152,12 @@ class BST:
             left = 1
         return max(right,left)
 ```
+
+
+# Problem to Solve
+
+Write a function that locates a value in a tree and displays the path from root to value.
+
+Example Output: 1-3-7-12
+
+[Solution](tree-solution.md)

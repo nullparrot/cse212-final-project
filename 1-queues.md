@@ -1,4 +1,4 @@
-[Return](0-welcome.md)
+[Return to Main Page](0-welcome.md)
 
 # Queues
 
@@ -69,6 +69,7 @@ class Queue:
     def peek(self):
         return self.s1[-1]
 
+    # When iterating through the queue, we remove each value as we get it
     def __iter__(self):
         while len(self.s1) > 0:
             yield self.s1.pop()
@@ -95,3 +96,6 @@ class Queue:
 
 # Problem to Solve:
 
+Implement a \_\_reverse\_\_ function that iterates through the queue in reverse. Since the \_\_iter\_\_ function removes items as it yields them, the reverse function should operate in the same way.
+
+[Solution](queue-solution.md)
